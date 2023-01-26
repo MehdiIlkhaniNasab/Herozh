@@ -660,6 +660,8 @@
     flex-direction: column;
     gap: 3rem;
     width: 100%;
+    padding: 0 2rem;
+
 }
 
 .comment__forms--wrapper form {
@@ -912,6 +914,12 @@
     }
     .desc__property--item {
         width:100%;
+    }
+
+    .reply__title button,
+    .reply__btn button {
+        width: max-content;
+        padding: 0 1rem;
     }
 }
 

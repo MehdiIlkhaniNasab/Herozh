@@ -317,15 +317,15 @@
         <div class="u-container">
             <div class="product-page__wrapper">
                 <div class="product-page_btns-tab">
-                    <button class="active" data-desc="description">توضیحات</button>
-                    <button data-lessons="lessons">جلسات دوره</button>
-                    <button data-comment="comment">
-                        <span>نظرات</span>
-                        <span>(0)</span>
+                    <button class="active" data-tab="description">توضیحات</button>
+                    <button data-tab="lessons">جلسات دوره</button>
+                    <button data-tab="comment" class="">
+                        نظرات
+                        (0)
                     </button>
                 </div>
                 <div class="product-page__infos">
-                    <div class="product-page__desc " data-desc="description">
+                    <div class="product-page__tab product-page__desc active" data-desc="description" id="description">
                         <div class="desc__title">
                             <h2 class="">
                                 درآمد میلیونی ماهانه با کسب‌و‌کار اینترنتی
@@ -773,7 +773,7 @@
                             <div class="questions__box">
                                 <div class="question__box">
                                     <h5 class="question__box--title">
-                                        <span><i class="fas fa-plus"></i></span>
+                                        <span><i class="fas fa-minus"></i></span>
                                         <span>وبمستران طلایی چه تفاوتی با سایر دوره‌های آموزش کسب‌و‌کار اینترنتی
                                             دارد؟</span>
                                     </h5>
@@ -795,7 +795,7 @@
                             <div class="questions__box">
                                 <div class="question__box">
                                     <h5 class="question__box--title">
-                                        <span><i class="fas fa-minus"></i></span>
+                                        <span><i class="fas fa-plus"></i></span>
                                         <span>وبمستران طلایی چه تفاوتی با سایر دوره‌های آموزش کسب‌و‌کار اینترنتی
                                             دارد؟</span>
                                     </h5>
@@ -816,7 +816,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="product-page__lessons " data-lessons="lessons">
+                    <div class="product-page__tab product-page__lessons " data-lessons="lessons" id="lessons">
                         <div class="lessons__boxes">
                             <div class="lesson__box">
                                 <div class="lesson__box--title">
@@ -1205,7 +1205,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="product-page__comment active" data-comment="comment">
+                    <div class="product-page__tab product-page__comment " data-comment="comment" id="comment">
                         <div class="comment__content">
                             <div class="comment__content--wrapper">
                                 <div class="comment__user">
@@ -1234,7 +1234,7 @@
                                         <div class="comment__sender-btn">
                                             <button>پاسخ</button>
                                         </div>
-                                        <form class="form__reply--comment">
+                                        <form class="form__reply--comment form__reply--sender-comemnt">
                                             <div class="reply__title">
                                                 <p class="">
                                                     <span>پاسخ به </span>
@@ -1276,6 +1276,22 @@
                                             <div class="comment__response-btn">
                                                 <button>پاسخ</button>
                                             </div>
+                                            <form class="form__reply--comment form__reply--response-comemnt">
+                                                <div class="reply__title">
+                                                    <p class="">
+                                                        <span>پاسخ به </span>
+                                                        <span>محمد امین سعیدی راد</span>
+                                                    </p>
+                                                    <button>لغو پاسخ</button>
+                                                </div>
+                                                <div class="reply__text">
+                                                    <span>دیدگاه شما*</span>
+                                                    <textarea name="" id="" cols="30" rows="10" placeholder=" "></textarea>
+                                                </div>
+                                                <div class="reply__btn">
+                                                    <button>ثبت</button>
+                                                </div>
+                                            </form>
                                         </div>
 
                                     </div>
@@ -1579,6 +1595,7 @@
     </footer>
     <script src="assest/js/libraries/swiper.js"></script>
     <script src="assest/js/app.js"></script>
+    <script src="assest/js/product.js"></script>
 </body>
 
 </html>
