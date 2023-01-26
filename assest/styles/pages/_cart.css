@@ -297,7 +297,10 @@ table {
         display: none;
     }
 
+    .checkout-steps {
+        width: 40rem !important;
     
+    }
 
   }
   

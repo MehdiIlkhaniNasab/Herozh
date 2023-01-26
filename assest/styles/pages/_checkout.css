@@ -323,6 +323,14 @@ p.active {
     .login-form__input-box{
         width: 100%;
     }
+    
+    .checkout-steps {
+        width: 40rem !important;
+    
+    }
+
 }
 
-@media only screen and (max-width: 37.5em) {}
+@media only screen and (max-width: 37.5em) {
+   
+}
