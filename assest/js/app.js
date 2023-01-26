@@ -1,3 +1,21 @@
+const menuIconHumber = document.querySelector('.menu__icon')
+const menuIconClose = document.querySelector('.icon__close')
+
+function openMenu() {
+  const menuMobile = document.querySelector('.menu-mobile')
+  menuMobile.classList.add('active')
+}
+
+function closeMenu() {
+  const menuMobile = document.querySelector('.menu-mobile')
+  menuMobile.classList.remove('active')
+}
+
+
+
+
+
+
 
 var newCourseSwiper = new Swiper('.new-courses-swiper', {
   pagination: '.swiper-pagination',
@@ -109,3 +127,5 @@ var studentCommentSwiper = new Swiper('.student-comment-swiper', {
 
 
 
+menuIconHumber.addEventListener('click', openMenu)
+menuIconClose.addEventListener('click', closeMenu)

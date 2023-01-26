@@ -215,3 +215,27 @@
     background-color: var(--yellow);
     width: 2.5rem;
 }
+
+/* Responsive */
+@media only screen and (max-width: 75em) {
+
+    html {
+        font-size: 50%;
+    }
+
+}
+
+@media only screen and (max-width: 62em) {}
+
+@media only screen and (max-width: 48em) {
+    .aboutus-page__profit-item{
+        width: calc(100%/2 - 1.5rem);
+    }
+    
+}
+
+@media only screen and (max-width: 37.5em) {
+    .courses-page .card {
+        width: 80% ;
+    }
+}
