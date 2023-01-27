@@ -1,5 +1,6 @@
 const menuIconHumber = document.querySelector('.menu__icon')
 const menuIconClose = document.querySelector('.icon__close')
+const menuBaskitIcon = document.querySelector('.menu__baskit')
 
 function openMenu() {
   const menuMobile = document.querySelector('.menu-mobile')
@@ -11,8 +12,19 @@ function closeMenu() {
   menuMobile.classList.remove('active')
 }
 
+function closeBaskitMenu(event) {
+  const baskitMenuWrapper = document.querySelector('.baskit-menu__wrapper')
+  if(event.target.classList.contains('active')){
+    event.target.classList.remove('active')
+  }
+}
 
 
+function showBaskitMenu(){
+  const baskitMenu  = document.querySelector('.baskit-menu ')
+  baskitMenu.addEventListener('click', closeBaskitMenu)
+  baskitMenu.classList.add('active')
+}
 
 
 
@@ -136,3 +148,4 @@ var studentCommentSwiper = new Swiper('.student-comment-swiper', {
 
 menuIconHumber.addEventListener('click', openMenu)
 menuIconClose.addEventListener('click', closeMenu)
+menuBaskitIcon.addEventListener('click', showBaskitMenu)
