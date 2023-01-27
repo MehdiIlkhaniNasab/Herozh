@@ -22,6 +22,8 @@ var newCourseSwiper = new Swiper('.new-courses-swiper', {
   effect: 'coverflow',
   grabCursor: true,
   centeredSlides: true,
+  autoplay:true,
+
   slidesPerView: 'auto',
   coverflow: {
     rotate: 50,
@@ -38,6 +40,8 @@ var blogBoxSwiper = new Swiper('.blog-swiper', {
 
   loop: true,
   grabCursor: true,
+  autoplay:true,
+
   breakpoints: {
     350: {
       slidesPerView: 1,
@@ -66,6 +70,8 @@ var relatedCoursesSwiper = new Swiper('.related-courses-swiper', {
 
   loop: true,
   grabCursor: true,
+  autoplay:true,
+
   breakpoints: {
     350: {
       slidesPerView: 1,
@@ -92,6 +98,7 @@ var studentCommentSwiper = new Swiper('.student-comment-swiper', {
 
   loop: true,
   grabCursor: true,
+  autoplay:true,
   breakpoints: {
     350: {
       slidesPerView: 1,
